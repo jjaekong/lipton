@@ -1,0 +1,1 @@
+sass --watch style.scss -E utf-8 --no-cache

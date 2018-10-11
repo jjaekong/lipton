@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800|Noto+Sans+KR:300,400,700&amp;subset=korean" rel="stylesheet">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Lipton</title>
+</head>
+<body class="join">
+    
+    <div id="container">
+        <header id="header">
+            <h1><img src="./assets/images/logo.png" alt="Lipton"></h1>
+        </header>
+        <nav id="toolbar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <a class="home" href="#"><img src="./assets/images/ico_home.png" alt="홈"></a>
+                    </div>
+                    <div class="col">
+                        <h2>밀크티 신청하기</h2>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </nav>
+        <main id="content">
+            <div class="container">
+                <h4>신청하기</h4>
+                <div class="form-area">
+                    <div class="form-group mobile">
+                        <label for="mobile">휴대폰 번호</label>
+                        <input type="number" id="mobile" class="form-control" placeholder="휴대폰 번호만 입력해 주세요" required>
+                    </div>
+                    <div class="form-group terms">
+                       
+                        <div class="accordion" id="terms">
+                            <div class="card">
+                                <div class="card-header">
+                                    <label class="checkbox-block" data-target="#terms-1">
+                                        <span class="text">이벤트 참여 약관 동의</span>
+                                        <input type="checkbox">
+                                        <span class="icon"></span>
+                                    </label>
+                                </div>
+                                <div id="terms-1" class="collapse show">
+                                    <div class="card-body">
+                                        <ol>
+                                            <li>
+                                                <div>1. 참여 가능 시간</div>
+                                                <ul>
+                                                    <li>- 매일 오전 12시 ~ 오후 4시</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div>2. 상품 제공 가능 수량</div>
+                                                <ul>
+                                                    <li>- 최대 5개까지 제공</li>
+                                                    <li>- 신청하기 1개, 카카오 톡 공유하기 최대 4개</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div>3. 상품 제공 형태</div>
+                                                <ul>
+                                                    <li>- 입력한 휴대폰번호로 문자 발송</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div>4. 상품 교환 장소</div>
+                                                <ul>
+                                                    <li>- 세븐일레븐에서만 가능</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div>5. 이벤트 종료 및 상품 교환</div>
+                                                <ul>
+                                                    <li>- 총 1만 건 소진 시 이벤트 종료</li>
+                                                    <li>- 부정한 방법으로 참여한 경우 이벤트 참여 취소</li>
+                                                    <li>- 교환 가능 기간이 지난 이후에는 교환 불가</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <label class="checkbox-block" data-target="#terms-2">
+                                        <span class="text">개인정보 수집 및 이용 동의</span>
+                                        <input type="checkbox">
+                                        <span class="icon"></span>
+                                    </label>
+                                </div>
+                                <div id="terms-2" class="collapse show">
+                                    <div class="card-body">
+                                        <ol>
+                                            <li>
+                                                <div>1. 수집하는 개인 정보의 항목</div>
+                                                <ul>
+                                                    <li>- 수집 항목 : 휴대전화번호</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div>2. 개인정보 수집 및 이용 목적</div>
+                                                <ul>
+                                                    <li>- 휴대전화번호 : MMS 발송 및 상품 교환에 관한 안내</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div>3. 개인정보 보유 및 이용기간</div>
+                                                <ul>
+                                                    <li>- 보유 기간 : 교환 가능 기간 까지</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group agree">
+                        <label class="checkbox-block">
+                            <span class="text">이벤트 참여 약관, 개인정보 수집 및 활용에 모두 동의합니다</span>
+                            <input type="checkbox">
+                            <span class="icon"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-area">
+                <button class="btn btn-block" data-toggle="modal" data-target="#apply">가능 수량 확인하기</button>
+            </div>
+        </main>
+    </div>
+    
+    <div class="modal modal-alert" id="apply" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="request kakao">
+                        <img src="./assets/images/ico_kakaotalk.png">
+                        <p>카카오톡 무료시음 가능 횟수 <strong class="mont">1</strong></p>
+                        <button type="button" class="btn">공유하기</button>
+                    </div>
+                    <div class="request mms">
+                        <img src="./assets/images/ico_mail.png">
+                        <p>MMS 무료시음 가능 횟수 <strong class="mont">1</strong></p>
+                        <button type="button" class="btn">신청하기</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-block" data-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- custom js -->
+    <script src="./assets/js/common.js"></script>
+    <script>
+        (function($) {
+            var agreeChkBox = $(".agree input[type='checkbox']");
+            var termsChkBox = $(".terms input[type='checkbox']");
+            agreeChkBox.on("click", function(e) {
+                if ($(this).is(':checked')) {
+                    termsChkBox.each(function(index, elem) {
+                        if (!$(elem).is(":checked")) {
+                            $(elem).trigger("click");
+                        }
+                    });
+                } else {
+                    termsChkBox.each(function(index, elem) {
+                        if ($(elem).is(":checked")) {
+                            $(elem).trigger("click");
+                        }
+                    });
+                }
+            });
+            
+            function checkTermsAll() {
+                if (termsChkBox.length === termsChkBox.filter(":checked").length) {
+                    agreeChkBox.prop("checked", true);
+                } else {
+                    agreeChkBox.prop("checked", false);
+                }
+            }
+            
+            termsChkBox.each(function(index, elem) {
+                var termsCollapsing = false;
+                $(elem).on("click", function(e) {
+                    // 모션이 일어나는 중 일 때, 클릭 막기
+                    if (termsCollapsing) { e.preventDefault(); return; }
+                    termsCollapsing = true;
+                    $(this).parent('label').toggleClass('collapsed');
+                    $($(this).parent('label').attr('data-target')).collapse('toggle');
+                    checkTermsAll(); // 둘 다 체크되어있는지
+                    window.setTimeout(function() {
+                        termsCollapsing = false;
+                    }, 300);
+                });
+            });
+            
+        })(jQuery);
+    </script>
+</body>
+</html>
