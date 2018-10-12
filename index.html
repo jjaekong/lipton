@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:800|Noto+Sans+KR:300,400,700&amp;subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Noto+Sans+KR:300,400,700&amp;subset=korean" rel="stylesheet">
     
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css" integrity="sha256-z78IDnzMlkZK8v2CTwM19nwgmpqbCSYiRtBGqX9bmsA=" crossorigin="anonymous" />
     
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Lipton</title>
 </head>
-<body class="main loading">
+<body class="home loading">
   
     <noscript>
         <p>브라우저가 자바스크립트를 지원하지 않거나<br>자바스크립트가 실행되지 않도록 설정되어 있습니다.</p>
@@ -27,16 +30,118 @@
     
     <div id="container">
         <header id="header">
-            <h1><img src="./assets/images/logo.png" alt="Lipton"></h1>
+            <h1 class="logo"><img src="./assets/images/logo.png" alt="Lipton"></h1>
             <button class="btn btn-link btn-nav">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="dot"></span>
+                <span class="line"><span class="bar"></span></span>
+                <span class="line"><span class="bar"></span><span class="dot"></span></span>
+                <span class="line"><span class="bar"></span></span>
             </button>
         </header>
         <main id="content">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        <div class="content">
+                            <p class="keyword"># 부드러운 휴식</p>
+                            <p class="phrase">여유를 선물할께요</p>
+                            <a class="more" href="#">자세히보기</a>
+                            <a class="fab" href="#coupon" data-toggle="modal"><img src="./assets/images/ico_barcode.png" alt="바코드 보기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+    </div>
+    
+    <!-- 쿠폰 바코드 및 정보 레이어 -->
+    <div class="modal" tabindex="-1" role="dialog" id="coupon">
+        <button type="button" class="btn btn-link btn-close" data-dismiss="modal">
+            <img src="./assets/images/ico_close.png" alt="닫기">
+        </button>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="product">
+                        <img class="thumb" src="./assets/images/img_milktea.png" alt="밀크티 이미지">
+                        <h1>립톤 밀크티</h1>
+                        <p>
+                            하루를 보내는 나에게 휴식처럼 달콤한 밀크티와<br>
+                            함께 여유를 즐겨보세요
+                        </p>
+                        <div class="price">
+                            <p class="mont normal">1,400</p>
+                            <p class="mont discount">FREE</p>
+                        </div>
+                        <div class="deadline">
+                            <p>소진시까지<br>~</p>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <a href="#"><img src="./assets/images/ico_arrow_up.png" alt="더보기"></a>
+                    </div>
+                    <div class="information">
+                        <div class="barcode">
+                            <p class="number mont">1019 2905 8176 0273</p>
+                            <p class="image"><img src="./assets/images/img_barcode_dummy.png" alt="1019 2905 8176 0273"></p>
+                            <p class="help">
+                                2018년 12월 31일까지 교환이 가능하며, 교환처는<br>
+                                세븐일레븐 편의점에서 가능합니다
+                            </p>
+                        </div>
+                        <div class="details">
+                            <div class="feature">
+                                <h4>립톤은 모두가 specialty입니다.</h4>
+                                <p>
+                                    파나마 에스메랄다, 과테말라 엘 소코로, 엘 살바도르 핀카<br>
+                                    미라마르 농장에서 직접 선택한 깊이 있는 고소함과<br>
+                                    부드러움이 더해진 아티제 블렌드 에스메랄다를 만나보세요.<br>
+                                    미라마르 농장에서 직접 선택한 깊이 있는 고소함과<br>
+                                    부드러움을 만나보세요.<br>
+                                </p>
+                            </div>
+                            <div class="useinfo">
+                                <dl>
+                                    <dt>사용기한</dt>
+                                    <dd>2018 10/13일 까지</dd>
+                                    <dd class="spacer"></dd>
+                                    <dd><strong>D-12</strong></dd>
+                                </dl>
+                                <dl>
+                                    <dt>교환처</dt>
+                                    <dd>세븐일레븐</dd>
+                                    <dd class="spacer"></dd>
+                                    <dd><a href="#">점포확인</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt>사용문의</dt>
+                                    <dd>옴니텔</dd>
+                                    <dd class="spacer"></dd>
+                                    <dd><a href="tel:">전화하기</a></dd>
+                                </dl>
+                            </div>
+                            <div class="notice">
+                                <h5>유의사항</h5>
+                                <p>
+                                    어드민에 입력된 유의사항 출력되는 영역 어드민에 입력된 유의사항 출력되는 영역 어드민에 입력된 유의사항 출력되는 영역 어드민에 입력된 유의사항 출력되는 영역
+                                </p>
+                            </div>
+                            <div class="reward">
+                                <h5>유효기간 연장 및 경과 시 보상기준</h5>
+                                <p>
+                                    어드민에 입력된 내용이 출력되는 영역 어드민에 입력된 내용이 출력되는 영역 어드민에 입력된 내용이 출력되는 영역 
+                                </p>
+                            </div>
+                            <div class="rufund">
+                                <h5>환불조건 및 방법</h5>
+                                <p>
+                                    어드민에 입력된 내용이 출력되는 영역 어드민에 입력된 내용이 출력되는 영역 어드민에 입력된 내용이 출력되는 영역 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -45,9 +150,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
+    <!-- swiper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js" integrity="sha256-bX3ZexuPmm3WbMkCXTtmA9NxFzcS0QP6Jz4gowE6U3A=" crossorigin="anonymous"></script>
+    
     <!-- custom js -->
     <script defer>
         (function($) {
+            
+            var touchstartX;
+            var touchstartY;
+            
+            var swiper = new Swiper ('.swiper-container', {
+                followFinger: false
+            });
+            
+            $(document).on("click", "#coupon .more a", function(e) {
+                $("#coupon").toggleClass('open-info');
+                e.preventDefault();
+            });
+            
+            $('#coupon').on('hidden.bs.modal', function (e) {
+                $(this).removeClass('open-info');
+            });
+            
         })(jQuery);
     </script>
     <script defer src="./assets/js/common.js"></script>
