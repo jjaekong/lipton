@@ -1,13 +1,37 @@
 <!doctype html>
-<html lang="ko" class="loading">
+<html lang="ko" class="loading" prefix="og: http://ogp.me/ns#">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta property="og:title" content="립톤">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://openmarket49.iskra.kr/mpp_lipton/"><!-- 실제 서비스될 때의 URL 입력해 주세요 -->
+    <meta property="og:image" content="http://openmarket49.iskra.kr/mpp_lipton/banner.png"><!-- 실제 서비스될 때의 URL로 변경해 주세요 -->
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="http://openmarket49.iskra.kr/mpp_lipton/assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Noto+Sans+KR:300,400,700&amp;subset=korean" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Noto+Sans+KR:300,400,700|Nanum+Myeongjo:400&amp;subset=korean" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -26,7 +50,25 @@
         <p>브라우저가 자바스크립트를 지원하지 않거나<br>자바스크립트가 실행되지 않도록 설정되어 있습니다.</p>
     </noscript>
    
-    <div id="loading"><p>Loading</p></div>
+    <div id="loading"><p><img src="./assets/images/logo.png" alt="Lipton"></p></div>
+    
+<!--
+    <div id="intro">
+        <p>여유를 선물합니다<br>립톤</p>
+    </div>
+-->
+    
+    <nav id="nav">
+        <h1 class="logo"><img src="./assets/images/logo.png" alt="Lipton"></h1>
+        <ul class="gnb">
+            <li><a href="#">립톤 밀크티란</a></li>
+            <li><a href="#">세븐 일레븐 찾기</a></li>
+        </ul>
+        <ul class="sns">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </nav>
     
     <div id="container">
         <header id="header">
@@ -39,13 +81,36 @@
         </header>
         <main id="content">
             <div class="swiper-container">
+                <div class="swiper-pagination"></div>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide-1">
+                        <div class="bg">
+                            <div class="bg-item bg-item-1"></div>
+                            <div class="bg-item bg-item-2"></div>
+                        </div>
                         <div class="content">
-                            <p class="keyword"># 부드러운 휴식</p>
-                            <p class="phrase">여유를 선물할께요</p>
-                            <a class="more" href="#">자세히보기</a>
+                            <div class="keywords">
+                                <p># 부드러운 휴식</p>
+                            </div>
+                            <div class="phrase">여유를 선물할께요</div>
+                            <a class="more" href="#story" data-toggle="modal">자세히보기</a>
                             <a class="fab" href="#coupon" data-toggle="modal"><img src="./assets/images/ico_barcode.png" alt="바코드 보기"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-2">
+                        <div class="bg">
+                            <div class="bg-item bg-item-cloud"></div>
+                            <div class="bg-item bg-item-sign"></div>
+                            <div class="bg-item bg-item-store"></div>
+                            <div class="bg-item bg-item-stone"></div>
+                        </div>
+                        <div class="content">
+                            <div class="keywords">
+                                <p># 내 주변에</p>
+                                <p># 세븐 일레븐</p>
+                            </div>
+                            <div class="phrase">어디에 있을까요?</div>
+                            <a class="more" href="#story" data-toggle="modal">자세히보기</a>
                         </div>
                     </div>
                 </div>
@@ -79,66 +144,186 @@
                     <div class="more">
                         <a href="#"><img src="./assets/images/ico_arrow_up.png" alt="더보기"></a>
                     </div>
-                    <div class="information">
-                        <div class="barcode">
-                            <p class="number mont">1019 2905 8176 0273</p>
-                            <p class="image"><img src="./assets/images/img_barcode_dummy.png" alt="1019 2905 8176 0273"></p>
-                            <p class="help">
-                                2018년 12월 31일까지 교환이 가능하며, 교환처는<br>
-                                세븐일레븐 편의점에서 가능합니다
+                    <div class="barcode">
+                        <p class="number mont">1019 2905 8176 0273</p>
+                        <p class="image"><img src="./assets/images/img_barcode_dummy.png" alt="1019 2905 8176 0273"></p>
+                        <p class="help">
+                            2018년 12월 31일까지 교환이 가능하며, 교환처는<br>
+                            세븐일레븐 편의점에서 가능합니다
+                        </p>
+                    </div>
+                    <div class="details">
+                        <div class="feature">
+                            <h4>립톤은 모두가 specialty입니다.</h4>
+                            <p>
+                                파나마 에스메랄다, 과테말라 엘 소코로, 엘 살바도르 핀카<br>
+                                미라마르 농장에서 직접 선택한 깊이 있는 고소함과<br>
+                                부드러움이 더해진 아티제 블렌드 에스메랄다를 만나보세요.<br>
+                                미라마르 농장에서 직접 선택한 깊이 있는 고소함과<br>
+                                부드러움을 만나보세요.<br>
                             </p>
                         </div>
-                        <div class="details">
-                            <div class="feature">
-                                <h4>립톤은 모두가 specialty입니다.</h4>
-                                <p>
-                                    파나마 에스메랄다, 과테말라 엘 소코로, 엘 살바도르 핀카<br>
-                                    미라마르 농장에서 직접 선택한 깊이 있는 고소함과<br>
-                                    부드러움이 더해진 아티제 블렌드 에스메랄다를 만나보세요.<br>
-                                    미라마르 농장에서 직접 선택한 깊이 있는 고소함과<br>
-                                    부드러움을 만나보세요.<br>
-                                </p>
-                            </div>
-                            <div class="useinfo">
-                                <dl>
-                                    <dt>사용기한</dt>
-                                    <dd>2018 10/13일 까지</dd>
-                                    <dd class="spacer"></dd>
-                                    <dd><strong>D-12</strong></dd>
-                                </dl>
-                                <dl>
-                                    <dt>교환처</dt>
-                                    <dd>세븐일레븐</dd>
-                                    <dd class="spacer"></dd>
-                                    <dd><a href="#">점포확인</a></dd>
-                                </dl>
-                                <dl>
-                                    <dt>사용문의</dt>
-                                    <dd>옴니텔</dd>
-                                    <dd class="spacer"></dd>
-                                    <dd><a href="tel:">전화하기</a></dd>
-                                </dl>
-                            </div>
-                            <div class="notice">
-                                <h5>유의사항</h5>
-                                <p>
-                                    어드민에 입력된 유의사항 출력되는 영역 어드민에 입력된 유의사항 출력되는 영역 어드민에 입력된 유의사항 출력되는 영역 어드민에 입력된 유의사항 출력되는 영역
-                                </p>
-                            </div>
-                            <div class="reward">
-                                <h5>유효기간 연장 및 경과 시 보상기준</h5>
-                                <p>
-                                    어드민에 입력된 내용이 출력되는 영역 어드민에 입력된 내용이 출력되는 영역 어드민에 입력된 내용이 출력되는 영역 
-                                </p>
-                            </div>
-                            <div class="rufund">
-                                <h5>환불조건 및 방법</h5>
-                                <p>
-                                    어드민에 입력된 내용이 출력되는 영역 어드민에 입력된 내용이 출력되는 영역 어드민에 입력된 내용이 출력되는 영역 
-                                </p>
-                            </div>
+                        <div class="useinfo">
+                            <dl>
+                                <dt>사용기한</dt>
+                                <dd>2018 10/13일 까지</dd>
+                                <dd class="spacer"></dd>
+                                <dd><strong>D-12</strong></dd>
+                            </dl>
+                            <dl>
+                                <dt>교환처</dt>
+                                <dd>세븐일레븐</dd>
+                                <dd class="spacer"></dd>
+                                <dd><a href="#">점포확인</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>사용문의</dt>
+                                <dd>옴니텔</dd>
+                                <dd class="spacer"></dd>
+                                <dd><a href="tel:">전화하기</a></dd>
+                            </dl>
                         </div>
+                        <div class="notice">
+                            <h5>유의사항</h5>
+                            <p>
+                                어드민에 입력된 유의사항 출력되는 영역 어드민에 입력된 유의사항 출력되는 영역 어드민에 입력된 유의사항 출력되는 영역 어드민에 입력된 유의사항 출력되는 영역
+                            </p>
+                        </div>
+                        <div class="reward">
+                            <h5>유효기간 연장 및 경과 시 보상기준</h5>
+                            <p>
+                                어드민에 입력된 내용이 출력되는 영역 어드민에 입력된 내용이 출력되는 영역 어드민에 입력된 내용이 출력되는 영역 
+                            </p>
+                        </div>
+                        <div class="rufund">
+                        <h5>환불조건 및 방법</h5>
+                        <p>
+                            어드민에 입력된 내용이 출력되는 영역 어드민에 입력된 내용이 출력되는 영역 어드민에 입력된 내용이 출력되는 영역 
+                        </p>
                     </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 이야기 레이어 -->
+    <div class="modal" tabindex="-1" role="dialog" id="story">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn btn-link btn-close" data-dismiss="modal">
+                        <img src="./assets/images/ico_arrow_left.png" alt="닫기">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <header>
+                        <h1>
+                            <p>립톤 <small>더하기</small></p>
+                            <p>여유 <small>이야기</small></p>
+                        </h1>
+                        <blockquote>
+                            <p><span>"향긋하고,부드럽고,달콤하게.</span></p>
+                            <p><span>나른한 오후에</span></p>
+                            <p><span>산뜻한 리프레쉬가 되어줄</span></p>
+                            <p><span>밀크티 한 잔 어때요?"</span></p>
+                        </blockquote>
+                        <div class="tags">
+                            <p>휴식</p>
+                            <p>여유</p>
+                            <p>밀크티향</p>
+                            <p>진한느낌</p>
+                        </div>
+                    </header>
+                    <figure>
+                        <img class="img-fluid" src="./assets/images/img_story_1.jpg">
+                    </figure>
+                    <section class="section">
+                        <h2>찬바람 부는 날,<br>따뜻한 밀크티</h2>
+                        <p>
+                            아이스 아메리카노 마시던 때가 엊그제같은데<br>
+                            어느 덧 찬바람이 불어 마음까지 서늘해지는 요즘이예요.
+                        </p>
+                        <p>
+                            커피의 날카로운 쌉쌀함도 좋아하지만,<br>
+                            이런 날씨엔 향긋한 홍차에 부드러운 우유를 더한<br>
+                            밀크티가 좋겠어요.
+                        </p>
+                        <p>
+                            우선,  홍차 티백을 넣고 뜨거운 물을 부은 뒤,<br>
+                            뚜껑을 덮어 향이 날아가지 않도록 3분간 우려요.<br>
+                            우유 2컵에 설탕을 넣어 잘 녹여주고,<br>
+                            <b>냉장실에서 8시간 차갑게 숙성시켜 마무리....ㅠㅠ</b>
+                        </p>
+                    </section>
+                    <figure>
+                        <img class="img-fluid" src="./assets/images/img_story_2.jpg">
+                    </figure>
+                    <section class="section">
+                        <p>
+                            밀크티는 의외로 맛있게 즐기기 어려웠어요.<br>
+                            물과 우유의 양, 차를 우리는 시간을 맞추기 까다로워서<br>
+                            바쁜 일상 속에서 밀크티를 즐기기 위해<br>
+                            저는 립톤 밀크티를 선택합니다.
+                        </p>
+                        <h2>
+                            밀크티를 즐기는<br>
+                            간편한 방법<br>
+                            립톤 밀크티
+                        </h2>
+                        <p>
+                            편의점에서 간편하게 만나는 밀크티를<br>
+                            예쁜 머그잔에 담아 따뜻하게 즐겨보세요.<br>
+                            별스타그램 감성도 놓치지 않을거예요!
+                        </p>
+                    </section>
+                    <figure>
+                        <img class="img-fluid" src="./assets/images/img_story_3.jpg">
+                    </figure>
+                    <section class="section">
+                        <h2>
+                            따뜻하고 포근한,<br>
+                            일상의 소소한 행복
+                        </h2>
+                        <p>
+                            출근 길엔 쌀쌀한 날씨에 몸을 움츠리게 되고,<br>
+                            회사에서는 정신없이 업무에 집중하다보면<br>
+                            오전 시간이 훌쩍 지나가버리죠.
+                        </p>
+                        <p>
+                            잠깐의 휴식시간, 복잡한 일은 잠시 잊고<br>
+                            간편한 밀크티와 함께 따뜻하고 포근한 여유를 즐겨요.<br>
+                            은근히 속이 편안하고 든든해지는 느낌까지...<br>
+                            완벽해요!
+                        </p>
+                    </section>
+                    <figure>
+                        <img class="img-fluid" src="./assets/images/img_story_4.jpg">
+                    </figure>
+                    <section class="section">
+                        <p>
+                            향과 맛이 좋아서<br>
+                            꽁했던 마음까지 스르르 풀리는<br>
+                            <strong>립톤 밀크티</strong>
+                        </p>
+                        <p>
+                            밀크티는 실제로 스트레스, 불면, 피로 등<br>
+                            심신안정에 도움을 준다는군요.<br>
+                            다이어트로 인한<br>
+                            변비고민이 있으신 분께도 효과가 있어요.<br>
+                            혈액순활을 원활하게 하고,<br>
+                            항암효과, 심혈관계질환을 예방하는 데도 좋다고 해요.<br>
+                        </p>
+                        <p>
+                            그러니 오늘은 커피 대신<br>
+                            향긋하고 부드러운 밀크티 한 잔으로<br>
+                            <strong>나를 사랑하는 시간</strong><br>
+                            가져보는 건 어떨까요?
+                        </p>
+                    </section>
+                    <figure>
+                        <img class="img-fluid" src="./assets/images/img_story_5.jpg">
+                    </figure>
                 </div>
             </div>
         </div>
@@ -146,9 +331,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- lodash js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
     
     <!-- swiper js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js" integrity="sha256-bX3ZexuPmm3WbMkCXTtmA9NxFzcS0QP6Jz4gowE6U3A=" crossorigin="anonymous"></script>
@@ -157,21 +345,56 @@
     <script defer>
         (function($) {
             
-            var touchstartX;
-            var touchstartY;
-            
             var swiper = new Swiper ('.swiper-container', {
-                followFinger: false
+                followFinger: false,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'fraction'
+                }
             });
             
-            $(document).on("click", "#coupon .more a", function(e) {
+            function notClipContent() {
+                $("#container").css({ "clip" : "rect(0px, "+ $(document).innerWidth() +"px, "+ $(document).innerHeight() +"px, 0px)" });
+            }
+            
+            function clipContent() {
+                $("#container").css({ "clip" : "rect("+ $(document).innerHeight() / 2 +"px, "+ $(document).innerWidth() / 2 +"px, "+ $(document).innerHeight() / 2 +"px, "+ $(document).innerWidth() / 2 +"px)" });
+            }
+            
+            $(window).on("load", function() {
+                notClipContent();
+            });
+            
+            $(window).on("resize", _.debounce(function() {
+                if ( $("body").hasClass("nav-opened") ) {
+                    clipContent();
+                } else {
+                    notClipContent();
+                }
+            }, 100));
+            
+            $(document).on("click", "#coupon .more a, #coupon .barcode", function(e) {
                 $("#coupon").toggleClass('open-info');
                 e.preventDefault();
             });
             
-            $('#coupon').on('hidden.bs.modal', function (e) {
-                $(this).removeClass('open-info');
+            $(document).on("click", ".btn-nav", function(e) {
+                $("body").addClass("nav-opened");
+                clipContent();
+                e.preventDefault();
             });
+            
+            $(document).on("click", "#nav", function(e) {
+                if (e.target.id == "nav") {
+                    $("body").removeClass("nav-opened");
+                    notClipContent();
+                    e.preventDefault();
+                }
+            });
+            
+//            $('#coupon').on('hidden.bs.modal', function (e) {
+//                $(this).removeClass('open-info');
+//            });
             
         })(jQuery);
     </script>
