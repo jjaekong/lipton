@@ -1932,3 +1932,71 @@ body.promotion {
         }
     }
 }
+
+body.error {
+    #header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 95px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 44.6666666667px;
+            height: 45.6666666667px;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    #content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        img {
+            display: block;
+            width: 100px;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        strong {
+            font-size: 23.3333333333px;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-size: 14.6666666667px;
+            line-height: 23.3333333333px;
+            text-align: center;
+            a {
+                color: #464953;
+                text-decoration: none;
+            }
+        }
+        a.main {
+            display: block;
+            width: 114px;
+            height: 43px;
+            border: 1px solid #464953;
+            border-radius: 3px;
+            line-height: 41px;
+            text-align: center;
+            font-size: 14.6666666667px;
+            color: #464953;
+            letter-spacing: 0;
+        }
+    }
+}
