@@ -872,8 +872,9 @@ body.home .slide-2 {
       font-weight: bold; }
     #coupon.modal .product p {
       margin-bottom: 15px;
-      color: #a3a5ad;
-      line-height: 18px; }
+      color: #464953;
+      line-height: 18px;
+      font-size: 14px; }
     #coupon.modal .product .price p {
       margin-bottom: 0; }
       #coupon.modal .product .price p + p {
@@ -993,15 +994,17 @@ body.home .slide-2 {
       #coupon.modal .details > div + div {
         border-top: 1px solid #ddd; }
     #coupon.modal .details h4 {
-      margin-bottom: 5px;
-      font-size: 14px;
-      font-weight: bold; }
+      margin-bottom: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 23px; }
     #coupon.modal .details h5 {
       margin-bottom: 5px;
       font-size: 12px;
       font-weight: bold; }
     #coupon.modal .details p {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      word-break: keep-all; }
     #coupon.modal .details dl {
       display: flex;
       margin-bottom: 0; }
@@ -1026,6 +1029,8 @@ body.home .slide-2 {
       #coupon.modal .details dl strong {
         color: #c80e29;
         font-weight: bold; }
+    #coupon.modal .details .feature p {
+      line-height: 20px; }
 
 #story.modal {
   overflow: hidden;

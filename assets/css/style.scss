@@ -1200,8 +1200,9 @@ body.home {
         }
         p {
             margin-bottom: 15px;
-            color: #a3a5ad;
+            color: #464953;
             line-height: 18px;
+            font-size: 14px;
         }
         .price {
             p {
@@ -1349,9 +1350,10 @@ body.home {
             }
         }
         h4 {
-            margin-bottom: 5px;
-            font-size: 14px;
+            margin-bottom: 10px;
+            font-size: 15px;
             font-weight: bold;
+            line-height: 23px;
         }
         h5 {
             margin-bottom: 5px;
@@ -1360,6 +1362,7 @@ body.home {
         }
         p {
             margin-bottom: 0;
+            word-break: keep-all;
         }
         dl {
             display: flex;
@@ -1390,6 +1393,11 @@ body.home {
             strong {
                 color: #c80e29;
                 font-weight: bold;
+            }
+        }
+        .feature {
+            p {
+                line-height: 20px;
             }
         }
     }
