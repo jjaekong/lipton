@@ -80,48 +80,37 @@
                     </div>
                 </div>
                 <div class="swiper-slide slide-2">
-                    <div class="slide-figure" dir="rtl">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <span class="flag">오전</span>
-                                <img class="img-fluid" src="./assets/images/promo/img_slide_2_figure_1.jpg">
-                            </div>
-                            <div class="swiper-slide">
-                                <span class="flag">오후</span>
-                                <img class="img-fluid" src="./assets/images/promo/img_slide_2_figure_2.jpg">
-                            </div>
-                            <div class="swiper-slide">
-                                <span class="flag">오전</span>
-                                <img class="img-fluid" src="./assets/images/promo/img_slide_2_figure_3.jpg">
-                            </div>
-                            <div class="swiper-slide">
-                                <span class="flag">오후</span>
-                                <img class="img-fluid" src="./assets/images/promo/img_slide_2_figure_4.jpg">
-                            </div>
+                    <div class="slide-figure">
+                        <div class="figure-item">
+                            <img src="./assets/images/promo/bg_slide_2.jpg">
                         </div>
                     </div>
                     <div class="slide-content">
                         <div class="keyword">
-                            <p>어제와 닮은 오늘</p>
+                            <p>따스한 햇살</p>
                             <span class="bar"></span>
                         </div>
                         <div class="phrase">
-                            <p>여유는 갖으셨나요</p>
+                            <p>그림자 모습이 긴</p>
+                            <p>오후의 시간</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide slide-3">
                     <div class="slide-figure">
                         <img class="figure-item figure-item-1" src="./assets/images/promo/img_slide_3_figure_1.png">
-                        <p class="figure-item figure-item-2"></p>
+                        <img class="figure-item figure-item-2" src="./assets/images/promo/img_slide_3_figure_2.png">
+                        <img class="figure-item figure-item-3" src="./assets/images/promo/img_slide_3_figure_3.png">
+                        <img class="figure-item figure-item-4" src="./assets/images/promo/img_slide_3_figure_4.png">
+                        <img class="figure-item figure-item-5" src="./assets/images/promo/img_slide_3_figure_5.png">
                     </div>
                     <div class="slide-content">
                         <div class="keyword">
-                            <p>여유는</p>
+                            <p>내게 선물하는</p>
                             <span class="bar"></span>
                         </div>
                         <div class="phrase">
-                            <p>버리는 것이 아닌,</p>
+                            <p>여유의 시간은</p>
                             <p>나를 채우는 것</p>
                         </div>
                     </div>
@@ -139,6 +128,7 @@
                         </div>
                     </div>
                 </div>
+<!--
                 <div class="swiper-slide slide-5">
                     <div class="slide-content">
                         <div class="keyword">
@@ -151,6 +141,8 @@
                         </div>
                     </div>
                 </div>
+-->
+<!--
                 <div class="swiper-slide slide-6">
                     <div class="slide-content">
                         <h5>립톤</h5>
@@ -160,7 +152,15 @@
                         </div>
                     </div>
                 </div>
+-->
                 <div class="swiper-slide slide-7">
+                    <div class="slide-intro">
+                        <h5>립톤</h5>
+                        <div class="phrase">
+                            <p>나에게 여유를</p>
+                            <p>선물하다</p>
+                        </div>
+                    </div>
                     <div class="slide-content">
                         <div class="bar"><span></span></div>
                         <div class="phrase">
@@ -183,12 +183,11 @@
                 <div class="swiper-slide"><!-- 이벤트 진행 중 일 경우 -->
                     <div class="slide-content ongoing-event">
                         <div class="slide-body">
-                            <p class="quantity">최대 5개!</p>
                             <div class="clock">
                                 <span class="hand"></span>
                             </div>
                             <div class="advice">
-                                <small>매일 낮 12시부터 오후 4시</small>
+                                <small>최대 5개, 매일 낮 12시부터 오후 4시에는</small>
                                 <p>밀크티를 선물하세요</p>
                             </div>
                             <div class="now">
@@ -273,15 +272,18 @@
                         <div class="slide-body">
                             <h1 class="logo"><img src="./assets/images/logo.png" alt=""></h1>
                             <h4>
-                                <small>감사드립니다<span></span></small>
+                                <small>감사드립니다</small>
+                                <hr>
                                 이벤트가 종료되었습니다.
                             </h4>
                             <p>
-                                립톤이 진행한 이벤트에  관심을 가져주셔서 감사합니다.<br>
                                 립톤이 드리는 밀크티의 갯수가 모두 소진되었습니다.<br>
-                                앞으로, 여러분의 옆에 한잔의 여유로 기억될 수 있는<br>
+                                여러분의 옆에 한잔의 여유로 기억될 수 있는<br>
                                 립톤이 되도록 노력하겠습니다.
                             </p>
+                            <a href="index.html">
+                                메인으로
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -304,36 +306,23 @@
     <!-- custom js -->
     <script defer>
         (function($) {
-            var figureSwiper = null;
             var swiper = new Swiper ('.swiper-container', {
                 direction: 'vertical',
                 followFinger: true,
+                //initialSlide: 2,
                 on: {
                     init: function() {
                         $(this.slides[0]).addClass('shown');
+                        
+                        var clipFigure = $(this.slides[1]).find('.figure-item').eq(0);
+                        clipFigure.css('clip', "rect(0, 0, "+ clipFigure.height() +"px, 0)");
                     },
                     transitionEnd: function() {
                         $(this.slides[this.realIndex]).addClass('shown');
                         if (this.realIndex == 1) {
-                            if (!figureSwiper) {
-                                window.setTimeout(function() {
-                                    figureSwiper = new Swiper ('.slide-2 .slide-figure', {
-                                        loop: true,
-                                        followFinger: false,
-                                        allowTouchMove: false,
-                                        speed: 1000,
-                                        autoplay: {
-                                            delay: 2000,
-                                        },
-                                    });
-                                }, 2500)
-                            }
-                        } else {
-                            if (figureSwiper) {
-                                figureSwiper.destroy();
-                                figureSwiper = null;
-                            }
-                            
+                            //console.log($(this.slides[this.realIndex]).find('.figure-item').eq(0).height());
+                            var clipFigure = $(this.slides[1]).find('.figure-item').eq(0);
+                            clipFigure.css('clip', "rect(0, "+ clipFigure.width() +"px, "+ clipFigure.height() +"px, 0)");
                         }
                     }
                 }
@@ -352,7 +341,7 @@
             });
             
             function setTime() {
-                $(".ongoing-event .time .hour").text(moment().format('hh'));
+                $(".ongoing-event .time .hour").text(moment().format('HH'));
                 $(".ongoing-event .time .minute").text(moment().format('mm'));
                 if (moment().format('A') == "PM") {
                     $(".ongoing-event .now .noon .flag").text("오후");
