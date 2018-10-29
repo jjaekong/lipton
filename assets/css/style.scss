@@ -555,8 +555,11 @@ body.join {
         .kakao {
             background: #f9e000;
             .btn {
-                background: #2e3446;
-                color: #d4d4d4;
+                background: transparent;
+                color: #3b1f1e;
+                font-weight: bold;
+                border: 1px solid #d0bb00;
+                box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.07) !important;
             }
         }
         .mms {
@@ -565,7 +568,11 @@ body.join {
                 color: #fff;
             }
             .btn {
-                background: #f9e000;
+                background: transparent;
+                color: #fff;
+                font-weight: bold;
+                border: 1px solid #212532;
+                box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.07) !important;
             }
         }
     }
@@ -643,7 +650,7 @@ body.home {
         position: absolute;
         //top: 0;
         //left: 50%;
-        transition: clip .5s;
+        transition: clip .5s cubic-bezier(0, 0, 0.2, 1);
         will-change: clip;
 
 //        position: absolute;
@@ -926,10 +933,13 @@ body.home {
             border-radius: 50%;
             box-shadow: 5px 5px 17.28px 0.72px rgba(0, 0, 0, 0.16);
             animation: fly 1s infinite linear;
+            background: #fedf21;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img {
                 display: block;
-                width: 100%;
-                height: 100%;
+                height: 21px;
             }
         }
     }
@@ -941,23 +951,17 @@ body.home {
             width: 100%;
             height: 100%;
             .bg-item {
-                opacity: 0;
+                opacity: 0.1;
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 100%;
+                width: 120%;
                 height: 100%;
-                background-size: auto 100%;
-                background-position: 40% 0%;
-            }
-            .bg-item-2 {
-                background-image: url(../images/bg_slide1_1.jpg);
-                animation: roll 20s infinite;
-            }
-            .bg-item-1 {
                 background-image: url(../images/bg_slide1_3.jpg);
-                animation: roll 20s infinite;
-                animation-delay: 10s;
+                background-size: cover;
+                background-position: 50% 50%;
+                transform: translate(-10%, 0);
+                transition: opacity 2s 0s, transform 10s 0s;
             }
         }
         .content {
@@ -968,6 +972,12 @@ body.home {
             }
         }
         &.swiper-slide-active {
+            .bg {
+                .bg-item {
+                    opacity: 1;
+                    transform: translate(0%, 0);
+                }
+            }
             .content {
                 .keywords {
                     p {
@@ -1363,6 +1373,10 @@ body.home {
         p {
             margin-bottom: 0;
             word-break: keep-all;
+            a {
+                color: #464953;
+                text-decoration: none;
+            }
         }
         dl {
             display: flex;
