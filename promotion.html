@@ -111,8 +111,8 @@
                             <span class="bar"></span>
                         </div>
                         <div class="phrase">
-                            <p>커피는 미뤄두는건 </p>
-                            <p>어떨까요</p>
+                            <p>커피는 잠시</p>
+                            <p>미뤄두는 건 어떨까요?</p>
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                         </div>
                         <div class="phrase">
                             <p>부드러운 오후의 휴식을</p>
-                            <p>선물합니다</p>
+                            <p>선물할게요.</p>
                         </div>
                     </div>
                 </div>
@@ -334,7 +334,7 @@
             });
             
             function setTime() {
-                $(".ongoing-event .time .hour").text(moment().format('HH'));
+                $(".ongoing-event .time .hour").text(moment().format('H'));
                 $(".ongoing-event .time .minute").text(moment().format('mm'));
                 if (moment().format('A') == "PM") {
                     $(".ongoing-event .now .noon .flag").text("오후");
