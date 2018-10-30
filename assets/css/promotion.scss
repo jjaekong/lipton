@@ -13,19 +13,21 @@ body.promotion {
             top: 0;
             left: 0;
             width: 100%;
-            height: 95px;
+            height: 120px;
             display: flex;
             justify-content: center;
             align-items: center;
             .logo {
                 display: block;
                 margin: 0 auto;
-                width: 44.6666666667px;
-                height: 45.6666666667px;
+                width: 60px;
+                height: 61px;
                 img {
                     display: block;
-                    width: 100%;
-                    height: 100%;
+//                     width: 100%;
+//                     height: 100%;
+                    width: 60px;
+                    height: 61px;
                 }
             }
         }
@@ -110,7 +112,7 @@ body.promotion {
         .slide-figure {
             right: 0;
             width: 120%;
-            height: 100%;
+            height: 110%;
             background-image: url(../images/promo/bg_slide_1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -121,6 +123,7 @@ body.promotion {
             //background-color: orange;
         }
         .slide-content {
+            padding-top: 130px;
             .phrase {
                 font-size: 30px;
             }
@@ -538,13 +541,17 @@ body.promotion {
         .slide-body {
             position: relative;
             overflow: hidden;
-            padding-top: 40px;
+            //padding-top: 20px;
             width: 100%;
             height: 100%;
             background-image: url(../images/bg_promotion_milk.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 50% 50%;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
             p {
                 margin-top: 5px;
                 margin-bottom: 0;
@@ -559,8 +566,8 @@ body.promotion {
             }
             .clock {
                 position: relative;
-                display: block;
-                margin: 0 auto 35px;
+                display: none;
+                margin: 0 auto 15px;
                 width: 33px;
                 height: 33px;
                 background-image: url(../images/ico_clock.png);
@@ -581,11 +588,12 @@ body.promotion {
                 }
             }
             .advice {
+                //margin-top: 10px;
                 small {
                     font-size: 13px;
                 }
                 p {
-                    font-size: 30px;
+                    font-size: 28px;
                     font-weight: bold;
                     color: #464953;
                 }
@@ -596,7 +604,7 @@ body.promotion {
                 justify-content: center;
                 .noon {
                     position: absolute;
-                    top: 20px;
+                    top: 15px;
                     left: 50%;
                     display: flex;
                     flex-direction: column;
@@ -617,9 +625,9 @@ body.promotion {
                 }
                 .time {
                     display: flex;
-                    font-size: 73.33px;
+                    font-size: 65px;
                     font-weight: 600;
-                    line-height: 100px;
+                    line-height: 80px;
                     font-family: 'Montserrat', monospace, sans-serif;
                     .divider {
                         display: flex;
@@ -642,11 +650,17 @@ body.promotion {
                     }
                 }
             }
+            .available {
+                position: relative;
+                margin: 0 auto;
+                padding: 50px 0 0;
+                width: 70px;
+            }
             .tea {
                 z-index: 1;
                 position: relative;
-                margin: 70px auto 0;
-                width: 79px;
+                //margin: 70px auto 0;
+                width: 70px;
                 img {
                     display: block;
                     width: 100%;
@@ -655,9 +669,10 @@ body.promotion {
             .badge {
                 z-index: 0;
                 position: absolute;
+                top: 0;
                 left: 50%;
                 width: 91px;
-                margin-top: 5px;
+                //margin-top: 5px;
                 margin-left: 10px;
                 img {
                     display: block;
